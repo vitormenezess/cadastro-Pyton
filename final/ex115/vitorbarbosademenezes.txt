@@ -1,4 +1,2 @@
-vitor; 30
-liliane; 29
-Suellen; 49
-maria; 100
+vitor; idade 30
+liliane; idade 29

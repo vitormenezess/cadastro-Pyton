@@ -2,7 +2,6 @@ from ex115.lib.interface import *
 from ex115.lib.arquivo import *
 from time import sleep
 
-
 lista = list()
 arq = 'vitorbarbosademenezes.txt'
 if arquivoExiste(arq):
@@ -12,10 +11,11 @@ else:
     criaarArquivo(arq)
 while True:
     resposta = menu()
-    if resposta == 2:
-       print('cadastro')
-    elif resposta == 1:
+    if resposta == 1:
         lerArquivo(arq)
+    elif resposta == 2:
+        n = str(input('Nome: '))
+        i = int(input('Idade: '))
+        cadastra(arq, n, i)
     elif resposta == 3:
         break
-
